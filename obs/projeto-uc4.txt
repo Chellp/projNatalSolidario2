@@ -1,0 +1,194 @@
+Página inicial com informações da campanha;
+Uma pagina com instruções para doações;
+um mapa ou lista com os pontos de coleta;
+Formulário simples de contato para dúvidas.
+
+1. GitHub Pages
+
+    Principais Características:
+        Permite hospedar sites estáticos diretamente de repositórios do GitHub.
+        Suporta HTML, CSS, JavaScript e outros arquivos estáticos.
+        Oferece integração fácil com repositórios e controle de versão.
+    Pontos Fortes:
+        Gratuito e fácil de configurar.
+        Integração direta com o GitHub e ideal para projetos de código aberto.
+    Pontos Fracos:
+        Somente para sites estáticos (não suporta back-end dinâmico).
+        Limitações de personalização e recursos.
+
+2. Netlify
+
+    Principais Características:
+        Hospedagem para sites estáticos com suporte a continuação de integração contínua (CI/CD).
+        Implementação automática de sites diretamente de repositórios Git.
+        Suporte para funções serverless e automação.
+    Pontos Fortes:
+        Implementação rápida e fácil de sites estáticos.
+        Suporte a funções serverless e integração contínua.
+    Pontos Fracos:
+        Limitações de funcionalidade no plano gratuito (como armazenamento e largura de banda).
+        Funcionalidades avançadas requerem planos pagos.
+
+3. Vercel
+
+    Principais Características:
+        Hospedagem e implantação rápida para sites estáticos e serverless.
+        Suporta integração com frameworks modernos, como Next.js.
+        Autodeploy a partir de repositórios Git.
+    Pontos Fortes:
+        Excelente para deploy de aplicações front-end modernas.
+        Implementação simples a partir do GitHub ou GitLab.
+    Pontos Fracos:
+        Limitado em termos de recursos (memória e processamento) na versão gratuita.
+        Funcionalidades avançadas exigem planos pagos.
+
+4. Heroku
+
+    Principais Características:
+        Plataforma como serviço (PaaS) para deploy de aplicativos web.
+        Suporta várias linguagens de programação, como Node.js, Ruby, Python e PHP.
+        Oferece um plano gratuito com 550 horas de uso por mês.
+    Pontos Fortes:
+        Fácil de usar e configurar, com integração direta ao Git.
+        Suporte para back-end dinâmico e banco de dados.
+    Pontos Fracos:
+        O plano gratuito tem limite de horas de uso e "sleep" de aplicações após 30 minutos de inatividade.
+        Não é ideal para aplicações com tráfego muito alto.
+
+5. Glitch
+
+    Principais Características:
+        Plataforma gratuita para criar e hospedar aplicativos web em tempo real.
+        Suporte a Node.js, com colaboração e edição em tempo real.
+        Hospedagem de projetos com edição direta do código no navegador.
+    Pontos Fortes:
+        Facilidade de edição ao vivo e colaboração.
+        Ideal para protótipos rápidos e pequenos projetos.
+    Pontos Fracos:
+        A versão gratuita tem limitações de recursos.
+        Menos escalável para aplicações grandes e com alto tráfego.
+
+6. Firebase Hosting
+
+    Principais Características:
+        Serviço de hospedagem para sites estáticos e dinâmicos (com funções serverless).
+        Integrado ao Firebase, oferece fácil gerenciamento de banco de dados e autenticação.
+        Certificados SSL automáticos e suporte a domínios personalizados.
+    Pontos Fortes:
+        Ideal para aplicativos móveis e web com backend serverless.
+        Excelente suporte para integração com outros serviços do Firebase.
+    Pontos Fracos:
+        Recurso de funções serverless tem limitações no plano gratuito.
+        A escalabilidade e recursos avançados requerem planos pagos.
+
+7. AWS Free Tier (Amazon Web Services)
+
+    Principais Características:
+        A AWS oferece uma camada gratuita com uma série de serviços como EC2 (máquinas virtuais), S3 (armazenamento), e Lightsail.
+        Oferece até 750 horas mensais de uso em diversos serviços.
+    Pontos Fortes:
+        Plataforma robusta e escalável com muitos recursos.
+        Suporte para uma ampla gama de tecnologias e frameworks.
+    Pontos Fracos:
+        Requer algum conhecimento técnico para configuração.
+        Recursos limitados no plano gratuito, e o uso além disso pode gerar custos elevados.
+
+8. DigitalOcean App Platform (Plano Gratuito)
+
+    Principais Características:
+        Plataforma PaaS da DigitalOcean para criar, testar e implantar aplicativos em containers.
+        Suporta Docker, Node.js, Python, Ruby, Go, entre outros.
+        Escalabilidade simples com uma interface amigável.
+    Pontos Fortes:
+        Simples para desenvolvedores iniciantes e flexível para desenvolvedores avançados.
+        Suporte a containers e aplicativos serverless.
+    Pontos Fracos:
+        O plano gratuito tem limitações de recursos e uso.
+        Funcionalidades avançadas requerem plano pago.
+
+9. InfinityFree
+
+    Principais Características:
+        Hospedagem web gratuita com espaço ilimitado e tráfego ilimitado.
+        Suporte para PHP, MySQL e scripts de servidor.
+        Integração fácil com o painel de controle cPanel.
+    Pontos Fortes:
+        Planejamento de recursos bastante generoso em comparação com outros provedores gratuitos.
+        Ideal para pequenas páginas pessoais e blogs.
+    Pontos Fracos:
+        Não oferece suporte a HTTPS no plano gratuito.
+        As opções de desempenho e personalização são limitadas.
+
+10. AwardSpace
+
+    Principais Características:
+        Hospedagem gratuita com 1 GB de espaço e 5 GB de tráfego mensal.
+        Suporte para PHP, MySQL, e WordPress.
+        Oferece um painel de controle intuitivo e fácil de usar.
+    Pontos Fortes:
+        Bom para sites pequenos e blogs pessoais.
+        Suporte a bancos de dados e WordPress no plano gratuito.
+    Pontos Fracos:
+        Limitações de espaço e tráfego.
+        O suporte e as funcionalidades avançadas estão disponíveis apenas em planos pagos.
+
+11. ByetHost
+
+    Principais Características:
+        Hospedagem gratuita com 1 GB de espaço e tráfego ilimitado.
+        Suporta PHP, MySQL, FTP e tem painel de controle cPanel.
+    Pontos Fortes:
+        Boa opção para pequenas páginas web e blogs.
+        Oferece várias ferramentas de administração e recursos como bancos de dados.
+    Pontos Fracos:
+        Propenso a limites de recursos e performance quando o tráfego aumenta.
+        Suporte técnico não é tão ágil.
+
+12. Hostinger (Plano Gratuito)
+
+    Principais Características:
+        Oferece hospedagem web básica gratuita, com suporte para PHP e MySQL.
+        Painel de controle cPanel e suporte a SSL básico.
+    Pontos Fortes:
+        Interface de usuário intuitiva e fácil de usar.
+        Suporte para WordPress e outras plataformas de CMS.
+    Pontos Fracos:
+        O plano gratuito tem muitos limites, como tráfego e espaço de armazenamento.
+        Funcionalidades limitadas comparado aos planos pagos.
+
+13. FreeHostingNoAds
+
+    Principais Características:
+        Hospedagem gratuita com 1 GB de espaço e tráfego ilimitado.
+        Suporte para PHP, MySQL e bancos de dados.
+    Pontos Fortes:
+        Sem anúncios (ao contrário de outras plataformas gratuitas).
+        Ideal para sites e blogs pessoais.
+    Pontos Fracos:
+        Menos suporte e funcionalidades avançadas.
+        Limitações de recursos para sites com alto tráfego.
+
+14. Google Cloud Free Tier
+
+    Principais Características:
+        Oferece uma série de serviços gratuitos, como instâncias de máquinas virtuais (f1-micro), Google App Engine e Cloud Storage.
+        Limites de uso mensal no plano gratuito.
+    Pontos Fortes:
+        Escalabilidade e desempenho de classe empresarial.
+        Oferece uma ampla gama de ferramentas para desenvolvedores e aplicativos.
+    Pontos Fracos:
+        Requer algum conhecimento técnico para utilizar a plataforma.
+        Os recursos gratuitos são limitados e podem não ser suficientes para projetos maiores.
+
+15. Surge.sh
+
+    Principais Características:
+        Hospedagem gratuita para sites estáticos.
+        Fácil implantação através de linha de comando.
+        Suporte a domínios personalizados e HTTPS.
+    Pontos Fortes:
+        Extremamente fácil de usar e implementar.
+        Ideal para desenvolvedores que precisam de deploy rápido e simples.
+    Pontos Fracos:
+        Somente para sites estáticos, sem suporte a back-end dinâmico.
+        Não é adequado para projetos grandes com muita complexidade.
