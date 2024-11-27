@@ -1,10 +1,26 @@
+@font-face {
+    font-family: 'Oswald Medium';
+    src: url(fontes/Oswald/static/Oswald-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'StyleScript';
+    src: url(fontes/Style_Script/StyleScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'FleurDeLeah';
+    src: url(fontes/Fleur_De_Leah/FleurDeLeah-Regular.ttf);
+}
+
 :root{
     --cor-primaria: #cb3535;
     --cor-primaria-hover: #d84d4d;
     --cor-secundaria: #fff732;
     --cor-terciaria: #34b832;
+    --cor-terciaria-hover: #70d86e;
     --cor-branco: #fff;
-    --cor-cinza-claro: #c9c9c9;
+    --cor-cinza-claro: #d5e2e48f;
     --padding-lateral: 10vw;
     --tmp-transicao: .4s;
 }
@@ -17,6 +33,13 @@
 }
 
 li{ list-style: none; }
+section{
+    margin-top: 50px;
+}
+
+h1, h2{
+    font-family: 'Oswald Medium';
+}
 
 .camada-preta{
     width: 100%; height: 100%;
@@ -36,6 +59,7 @@ li{ list-style: none; }
 }
 
 .navbar a{
+    font-family: 'Oswald Medium';
     color: var(--cor-branco);
     text-transform: capitalize;
 }
@@ -63,8 +87,31 @@ li{ list-style: none; }
     background-position-y: center;
 }
 
-section{
-    margin-top: 50px;
+.banner .camada-preta{
+    padding: 0 var(--padding-lateral);
+    display: flex;
+}
+
+.banner img{
+    height: 40%;
+}
+
+.banner .conteudo-area{
+    margin-top: 200px;
+    color: var(--cor-branco);
+}
+
+.banner .conteudo-area h1{
+    font-size: 90px;  
+}
+
+.banner .conteudo-area h1 span{
+    font-family: 'FleurDeLeah';
+    color: var(--cor-secundaria);
+}
+
+.banner .conteudo-area p{
+    font-size: 60px;
 }
 
 section.apresentacao{
@@ -114,6 +161,32 @@ section.apresentacao .conteudo-area p{
 section.info-doacoes{
     display: grid;
     grid-template-columns: 60% auto;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background-color: var(--cor-cinza-claro);
+}
+
+section.info-doacoes h2{
+    grid-column: 1/3;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--cor-terciaria);
+}
+
+section.info-doacoes .conteudo-area{
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+}
+
+section.info-doacoes p{
+    font-size: 25px;
+}
+
+section.info-doacoes .img-area img{
+    width: 70%;
 }
 
 section.info-doacoes h2{
@@ -140,9 +213,280 @@ section.info-doacoes .img-area img{
     width: 70%;
 }
 
+section.formulario{
+    margin: 0;
+}
+
 section.formulario .titulo-area{
     width: 100%;
     padding: 0 var(--padding-lateral);
     display: flex;
     justify-content: space-between;
+}
+
+section.formulario .titulo-area div{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.formulario .titulo-area div h2{
+    font-size: 90px;
+    font-family: 'StyleScript';
+    color: var(--cor-primaria);
+}
+
+section.formulario form{
+    width: 50%;
+    font-size: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.formulario form input{
+    width: 100%;
+    text-align: center;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 25px;
+}
+
+section.formulario form input:focus{
+    outline: 1.5px solid rgb(109, 228, 208);
+}
+
+section.formulario form button{
+    margin-top: 20px;
+    padding: 10px 30px;
+    color: var(--cor-branco);
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--cor-terciaria);
+    transition: background-color var(--tmp-transicao);
+}
+
+section.formulario form button:hover{
+    cursor: pointer;
+    background-color: var(--cor-terciaria-hover );
+}
+
+section.formulario form .inputRadio{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+section.formulario form .inputRadio label{
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+}
+
+section.formulario form .inputRadio input:focus{
+    outline: none;
+}
+
+footer{
+    margin-top: 100px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    color: var(--cor-branco);
+    background-color: #e6ba2c;
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+}
+
+footer .content-area{
+    flex-direction: column;
+}
+
+footer .content-area h3{
+    font-size: 25px;
+}
+
+footer .content-area p{
+    font-family: 'StyleScript';
+    font-size: 20px;
+}
+
+footer .img-area{
+    width: 100%;
+    justify-content: space-around;
+}
+
+@media (max-width: 1068px) {
+    .banner{
+        height: 75vh;
+    }
+
+    .banner .conteudo-area h1{
+        font-size: 70px;  
+    }
+
+    
+    .banner .conteudo-area p{
+        font-size: 40px;
+    }
+
+    section.info-doacoes{
+        padding: 50px;
+    }
+
+    section.info-doacoes h2{
+        margin-bottom: 50px;
+    }
+
+    section.info-doacoes > div p{
+        width: 100%;
+    }
+
+    section.info-doacoes .img-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.info-doacoes .img-area img{
+        width: 100%;
+    }
+}
+
+@media  (max-width: 848px){
+    .banner{
+        height: 65vh;
+    }
+
+    .banner .conteudo-area{
+        margin-top: 100px;
+    }
+
+    section.info-doacoes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.info-doacoes .img-area{
+        margin-top: 50px;
+    }
+
+    section.info-doacoes .img-area img{
+        width: 50%;
+    }
+
+    section.info-doacoes .conteudo-area p{
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 794px){
+    section.apresentacao .conteudo-area .titulo-area{
+        width: 80%;
+    }
+
+    section.formulario .titulo-area div h2{
+        font-size: 60px;
+    }
+
+}
+
+@media (max-width: 613px){
+    .banner{
+        height: 45vh;
+    }
+
+    .banner img{
+        height: 20%;
+    }
+
+    .banner .conteudo-area{
+        margin-top: 70px;
+    }
+
+    .banner .conteudo-area h1{
+        font-size: 50px;  
+    }
+
+    .banner .conteudo-area p{
+        font-size: 30px;
+    }
+    section.apresentacao{
+        width: 100%;
+        max-width: 100vw;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.apresentacao .conteudo-area .titulo-area{
+        width: 60%;
+    }
+    
+    section.apresentacao p{
+        text-align: center;
+    }
+
+    section.info-doacoes .conteudo-area, section.info-doacoes .conteudo-area p{
+        padding: 0;
+    }
+
+    section.formulario .titulo-area div{
+        margin-top: 20px;
+    }
+
+    section.formulario .titulo-area img{
+        height: 150px;
+    }
+
+    footer .img-area img{
+        width: 30%;
+    }
+}
+
+@media (max-width: 520px){
+    header h1{
+        font-size: 20px;
+    }
+
+    .navbar ul{
+        gap: 5px;
+    }
+
+    .navbar ul li a{
+        font-size: 15px;
+    }
+    
+    form .inputRadio{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.formulario .titulo-area{
+        justify-content: center;
+    }
+
+    section.formulario .titulo-area div h2{
+        font-size: 35px;
+    }
+
+    section.formulario .titulo-area img{
+        height: 100px;
+    }
+
+    footer{
+        margin-top: 50px;
+    }
 }
