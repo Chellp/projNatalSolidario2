@@ -13,6 +13,11 @@
     src: url(fontes/Fleur_De_Leah/FleurDeLeah-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url(fontes/Roboto/Roboto-Regular.ttf);
+}
+
 :root{
     --cor-primaria: #cb3535;
     --cor-primaria-hover: #d84d4d;
@@ -30,6 +35,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Roboto Regular', sans-serif;
 }
 
 li{ list-style: none; }
@@ -207,10 +213,54 @@ section.info-doacoes .conteudo-area{
 section.info-doacoes p{
     width: 75%;
     font-size: 25px;
+    color: rgb(44, 44, 44);
 }
 
 section.info-doacoes .img-area img{
     width: 70%;
+}
+
+section.info-doacoes .descricao{
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-column: 1/3;
+    text-align: center;
+}
+
+section.info-doacoes .descricao h3{
+    margin-top: 20px;
+    font-family: "Oswald Medium";
+    font-size: 25px;
+    color: var(--cor-terciaria-hover);
+    letter-spacing: 3px;
+}
+
+section.info-doacoes .descricao p{
+    width: 100%;
+    padding: 0;
+}
+
+section.info-doacoes .listaPontosColeta{
+    margin: 50px 10%;
+    grid-column: 1/3;
+    margin-top: 60px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 2px solid var(--cor-branco);
+    border-radius: 10px;
+}
+
+section.info-doacoes .listaPontosColeta li{
+    padding: 10px 0;
+    font-size: 18px;
+    border-bottom: 2px solid var(--cor-branco);
+}
+
+section.info-doacoes .listaPontosColeta span{
+    color: var(--cor-terciaria);
+    padding: 0 5px;
 }
 
 section.formulario{
@@ -247,7 +297,7 @@ section.formulario form{
     align-items: center;
 }
 
-section.formulario form input{
+section.formulario form input, #pontoColetaForm{
     width: 100%;
     text-align: center;
     padding: 5px 15px;
@@ -317,6 +367,7 @@ footer .content-area h3{
 }
 
 footer .content-area p{
+    text-align: center;
     font-family: 'StyleScript';
     font-size: 20px;
 }
